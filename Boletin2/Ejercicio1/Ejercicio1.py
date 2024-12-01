@@ -2,7 +2,7 @@
 from multiprocessing import Process, Queue
 from time import sleep
 
-
+ 
 
 def leerFichero(cola: Queue):
     with open("Boletin2\\Ejercicio1\\Ejercicio1.txt", "r") as archivo:
