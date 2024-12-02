@@ -20,10 +20,10 @@ def leerFichero(cola: Queue):
 def sumaDeNumeros(cola: Queue):
     while True:
         # Obtiene el primer número de la cola
-        pedidos = cola.get()
-        if pedidos is None:  # Si recibe None, termina el proceso
+        numeros = cola.get()
+        if numeros is None:  # Si recibe None, termina el proceso
             break
-        numeroDeInicio, numeroFinal = pedidos
+        numeroDeInicio, numeroFinal = numeros
         suma = 0  # Reiniciar suma en cada ciclo
         sleep(1)  # Simula tiempo de procesamiento
         # Asegura que el rango se recorra de menor a mayor
