@@ -14,7 +14,7 @@ def InicializarJugador(pipe):
 # Función que procesa números de la cola. Se ejecuta repetidamente mientras la cola no contenga None.
 def RealizarSorteo(pipe):
     print("Reaizado apuestas:")
-    numeros_aleatorios =generar_tupla_unica(1,21,5)
+    numeros_aleatorios =generar_tupla_unica(1,100,100)
     while True:
         # Obtiene la cola
         obtenerDatos = pipe.recv()
